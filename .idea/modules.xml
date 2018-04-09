@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dlib/dlib.iml" filepath="$PROJECT_DIR$/dlib/dlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://C:\Users\rramegowda\Desktop\Integrated\walk-with-me-develop-afac24d18c42f7b7c9ad79561a9bfaac8595d78f\walk-with-me.iml" filepath="C:\Users\rramegowda\Desktop\Integrated\walk-with-me-develop-afac24d18c42f7b7c9ad79561a9bfaac8595d78f\walk-with-me.iml" />
+      <module fileurl="file://$PROJECT_DIR$/walk-with-me-develop-afac24d18c42f7b7c9ad79561a9bfaac8595d78f.iml" filepath="$PROJECT_DIR$/walk-with-me-develop-afac24d18c42f7b7c9ad79561a9bfaac8595d78f.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimage"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="3"
+    tools:context="com.gradledevextreme.light.indooratlaspro.View.Activities.Main.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/imageViewNav"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="7dp"
+        android:layout_weight="1"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button_bg"
+                android:src="@drawable/alllocations" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:text="All Locations"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wayFindingNav"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_weight="1"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:gravity="center_horizontal">
+
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button_bg"
+                android:src="@drawable/favorites" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:text="Favourite Locations"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addlocations"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="7dp"
+        android:layout_weight="1"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:gravity="center_horizontal">
+
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button_bg"
+                android:src="@drawable/addlocations" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:text="Add Location"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

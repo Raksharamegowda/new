@@ -1,0 +1,74 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    
+    repositories {
+        google()
+        jcenter()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.6-rc1"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven {
+            url "http://indooratlas-ltd.bintray.com/mvn-public"
+        }
+        maven {
+            url "http://indooratlas-ltd.bintray.com/mvn-public-beta"
+        }
+        maven {
+            url "http://indooratlas-ltd.bintray.com/mvn-public-alpha"
+        }
+        maven {
+            url "https://maven.google.com"
+        }
+
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+apply plugin: 'org.sonarqube'
+
+sonarqube {
+    properties {
+        property "sonar.projectKey", "com.gradledevextreme.light.indooratlaspro"
+        property "sonar.host.url", "http://localhost:9000"
+        property "sonar.login", "admin"
+        property "sonar.password", "admin"
+        property "sonar.sources", "src"
+        property "sonar.modules", "server,android"
+        property "server.sonar.projectName", "SmartScan Mail API Server"
+        property "server.sonar.sources", "src/main/java"
+        property "server.sonar.language", "java"
+        property "android.sonar.projectName", "SmartScan Mail Android"
+        property "android.sonar.sources", "src/main/java"
+        property "sonar.sourceEncoding", "UTF-8"
+    }
+}
+ext {
+    buildToolsVersion = '26.0.2'
+    compileSdkVersion = 25
+    minSdkVersion = 14
+    targetSdkVersion = 25
+    supportLibraryVersion = '25.3.1'
+
+    releaseVersionCode = 1
+    releaseVersionName = '1.0.3'
+    androidBuildToolsVersion = '26.0.2'
+    androidSupportSdkVersion = '25.3.1'
+}

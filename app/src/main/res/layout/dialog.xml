@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    tools:context=".View.Activities.Main.MainActivity">
+
+    <EditText
+        android:id="@+id/mName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cancelBtnId"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="37dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Enter Destination Name"
+        android:padding="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/okBtnId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:alpha="0.25"
+            android:background="@drawable/btn_bg_login"
+            android:text="Save"
+            android:textColor="#fff" />
+
+        <ImageView
+            android:id="@+id/btnSpeak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cancelBtnId"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:src="@mipmap/ic_launcher_foreground" />
+
+        <Button
+            android:id="@+id/cancelBtnId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/okBtnId"
+            android:layout_weight="1"
+            android:alpha="0.25"
+            android:background="@drawable/btn_bg_login"
+            android:text="Cancel"
+            android:textColor="#fff" />
+    </LinearLayout>
+</LinearLayout>

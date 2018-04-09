@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Want To Add To Favorites?"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:id="@+id/textView"
+        android:textStyle="italic"/>
+
+    <Button
+        android:id="@+id/btnYes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="39dp"
+        android:background="@drawable/btn_bg_login"
+        android:text="Yes"
+        android:alpha="0.25"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/btnNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnYes"
+        android:layout_alignBottom="@+id/btnYes"
+        android:layout_alignEnd="@+id/textView"
+        android:background="@drawable/btn_bg_login"
+        android:text="No"
+        android:alpha="0.25"
+        android:textColor="#fff" />
+</RelativeLayout>
